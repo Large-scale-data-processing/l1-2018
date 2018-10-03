@@ -4,7 +4,10 @@
 
 0. Przygotowanie:
 	- [Vagrant](https://www.vagrantup.com/)
-	- zobacz co jest w pliku Vagrantfile
+	- zobacz co jest w pliku Vagrantfile, 
+	- stwórz u siebie katalog ```/projekt``` oraz plik ```/files/host``` [1](https://stackoverflow.com/a/27709845/4723795)
+	- zainstaluj VBox i dodaj zmienną [VBOX_INSTALL_PATH](https://stackoverflow.com/a/32702764/4723795)
+	- wyłącz Dockera oraz [Hyper-V](https://stackoverflow.com/a/42889976/4723795)
 	- umieszczaj pliki w katalogu projekt (będzie on zamontowany jako /project)
 	- ```vagrant up```
 	- ```vagrant ssh```
