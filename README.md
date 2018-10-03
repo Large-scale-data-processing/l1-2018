@@ -18,6 +18,6 @@
 
 4. Utwórz plik z nazwami katalogów. Napisz skrypt, który będzie przyjmował w wywołaniu linii poleceń nazwę tego pliku oraz wartość liczbową i tworzył katalogi o nazwach z pliku oraz dla każdego katalogu podkatalogi w liczbie określonej przez wartość liczbową o nazwie losowej.
 
-5. Korzystając z mechanizmu [here document](http://tldp.org/LDP/abs/html/here-docs.html) napisz skrypt, który będzie przyjmował wartość liczbową i adre email w linii poleceń a następnie [wysyłał wiadomosc emaila](https://www.youtube.com/watch?v=wFXLzr86MQ4) pod wskazany adres wraz dowolnym komentarzem tekstowym podaną wartością i wszystkimi wartościami zmiennych środowiskowych.
+5. Korzystając z mechanizmu [here document](http://tldp.org/LDP/abs/html/here-docs.html) napisz skrypt, który będzie przyjmował wartość liczbową i adre email w linii poleceń a następnie [wysyłał wiadomosc emaila](https://www.youtube.com/watch?v=wFXLzr86MQ4) (Vagrant pozwala wysyłać wiadomości tylko z konta root) pod wskazany adres wraz dowolnym komentarzem tekstowym podaną wartością i wszystkimi wartościami zmiennych środowiskowych.
 
 6. Wykonaj powyższe zadania na swoim koncie w klastrze WCSS
