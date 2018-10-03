@@ -12,10 +12,11 @@ Vagrant.configure("2") do |config|
   
   config.vm.synced_folder "project/", "/project"
 
-  config.vm.provision :shell,
-    inline: "apt-get update && apt-get install -y mailutils"
-  config.vm.provision :shell,
-    inline: "yes | sendmailconfig"
+  config.vm.provision :shell, inline: "rm -rf /etc/hosts"
+  config.vm.provision :file, source: 'files/hosts', destination: '/tmp/hosts'
+
+  config.vm.provision :shell, inline: "mv /tmp/hosts /etc/hosts"
+  config.vm.provision :shell, inline: "apt-get update && apt-get install -y sendmail"
   
   config.vm.provision :reload
 
