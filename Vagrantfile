@@ -1,3 +1,6 @@
+unless Vagrant.has_plugin?("vagrant-reload")
+  raise 'Install vagrant-reload "vagrant plugin install vagrant-reload"'
+end
 
 
 Vagrant.configure("2") do |config|
@@ -11,5 +14,10 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :shell,
     inline: "apt-get update && apt-get install -y mailutils"
+  config.vm.provision :shell,
+    inline: "yes | sendmailconfig"
+  
+  config.vm.provision :reload
+
 
 end
