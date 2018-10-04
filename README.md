@@ -10,7 +10,7 @@
 	- ```vagrant ssh```
 	- można korzystać z komendy sudo (np. żeby coś zainstalować)
 
-1. Napisz skrypt, który sprawdzi bieżącą datę i godzinę i jeśli wypada ona w czasie zajęć laboratoryjnych wyświetli napis "Witaj na zajęciach". W polecenie date z formatowanie
+1. Napisz skrypt, który sprawdzi bieżącą datę i godzinę i jeśli wypada ona w czasie zajęć laboratoryjnych wyświetli napis "Witaj na zajęciach"
 
 2. Należy dodać plik z zad 1. do plików startowych shella tak aby przy logowaniu był on uruchamiany (utwórz odpowiendie dowiązanie symboliczne tak żeby wszystkie pliki z którymi pracujesz znajdowały się w katalogu project)
 
